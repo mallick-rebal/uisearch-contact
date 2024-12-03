@@ -1,8 +1,8 @@
 # Documentation for UI-Search Content - assessment - by Rebal M
 This documentation provides step-by-step instructions for setting up, deploying, and configuring the UI-Search Content application. It includes all commands, configurations, and dependencies required to run the application.
 OPEN THE PDF 'Documentation for UI-Search Content - assessment - by Rebal M.pdf' under the main folder for better viewing or read below.
-
-
+### To clone the project use this url or git clone: 
+#### https://github.com/mallick-rebal/uisearch-contact.git 
 ## Overview
 This React-based web application enables users to search, filter, and manage contact details. The key features include:
 Search filters for contact fields such as name, email, phone, address, etc.
