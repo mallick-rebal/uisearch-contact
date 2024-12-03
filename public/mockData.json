@@ -1,0 +1,58 @@
+[{
+      "id": 1,
+      "firstName": "Rajeev",
+      "middleName": "",
+      "lastName": "Sharma",
+      "dob": "1986-02-12",
+      "address": "1001 Noble St STE 1",
+      "city": "Fairbanks",
+      "state": "AK",
+      "zip": "99701",
+      "email": "rajeevsharma@gmail.com",
+      "phone": "2582528582",
+      "note": "First User"
+    },
+    {
+      "id": 2,
+      "firstName": "Eesha",
+      "middleName": "",
+      "lastName": "Sharma",
+      "dob": "1995-07-04",
+      "address": "4821 Ridge Top Cir",
+      "city": "Anchorage",
+      "state": "AK",
+      "zip": "99508",
+      "email": "eeshasharma@gmail.com",
+      "phone": "1234567890",
+      "note": "none"
+    },
+    {
+      "id": 3,
+      "firstName": "Rebal",
+      "middleName": "",
+      "lastName": "Mallick",
+      "dob": "1997-11-11",
+      "address": "5492 Smitty's Court",
+      "city": "Mississauga",
+      "state": "ON",
+      "zip": "L5M0W2",
+      "email": "rebal123is56@gmail.com",
+      "phone": "6477713099",
+      "note": "none"
+    },
+    {
+      "id": 4,
+      "firstName": "Omar",
+      "middleName": "Al",
+      "lastName": "Shiqha",
+      "dob": "1990-12-11",
+      "address": "5482 Line Court",
+      "city": "Mississauga",
+      "state": "ON",
+      "zip": "L5M0X0",
+      "email": "omar11@yahoo.com",
+      "phone": "6477413179",
+      "note": "added to the system by admin"
+    }
+  ]
+  
