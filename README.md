@@ -1,4 +1,4 @@
-# Documentation for UI-Search Content - assessment - by Rebal M
+# Documentation for UI-Search Content - by Rebal M
 This documentation provides step-by-step instructions for setting up, deploying, and configuring the UI-Search Content application. It includes all commands, configurations, and dependencies required to run the application.
 OPEN THE PDF 'Documentation for UI-Search Content - assessment - by Rebal M.pdf' under the main folder for better viewing or read below.
 ### To clone the project use this url or git clone: 
