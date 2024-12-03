@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# Documentation for UI-Search Content - assessment - by Rebal M
+This documentation provides step-by-step instructions for setting up, deploying, and configuring the UI-Search Content application. It includes all commands, configurations, and dependencies required to run the application.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This React-based web application enables users to search, filter, and manage contact details. The key features include:
+Search filters for contact fields such as name, email, phone, address, etc.
+A paginated results table.
+Ability to select and display details of a specific contact. 
 
-## Available Scripts
+## Features
+Search Filters: Users can search for contacts using parameters like name, email, or address. etc.
+Results Table: Displays contact results with pagination and selection functionality.
+Selected Contact: Displays detailed information about the selected contact.
+Pagination: Allows navigating through the results with "Next" and "Previous" buttons.
 
-In the project directory, you can run:
+## Prerequisites
+Before setting up the application, ensure that the following tools are installed:
+Node.js (v16 or higher) and npm (comes with Node.js)
+React Developer Tools (optional but recommended for debugging)
+I personally used VS code for my editor.
 
-### `npm start`
+## Setup Instructions
+1. Clone the Repository
+First, clone the project repository to your local machine using Git:
+git clone <repository-url>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+cd <repository-folder>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### 2. Install Dependencies
+Run the following command to install all necessary dependencies specified in the package.json file:
+bash/cmd line (with in terminal): 
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### 3. Install React-Bootstrap (this project I made use of Boostrap for easier integration with CSS for styling)
+This application uses React-Bootstrap for styling. So, please download Bootstrap components, install it using the following commands:
+npm install react-bootstrap bootstrap
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Add the following line to the index.js or App.js file to include the Bootstrap CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###4. Start the Development Server (to Run the code for this Project)
+Run the following command to start the application:
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This will launch the application in your default browser at http://localhost:3000.
+PLEASE MAKE SURE THAT USE ARE NOT USING HOST 3000 for any other projects or file before  beginning. 
 
-### `npm run eject`
+File Structure
+Here’s a brief overview of the project file structure:
+root/
+│
+├── public/                  # Public assets (e.g.,favicon,index.html)
+     ├── mockData.json        
+├── src/                     # Source files
+│   ├── components/          # Reusable React components
+│   │   ├── ResultsTable.js  # Displays paginated search results
+│   │   ├── SearchFilters.js # Search input fields for filtering contacts
+│   │   └── SelectedContact.js # Displays the selected contact details
+│   ├── App.js               # Main application component
+│   ├── index.js             # Application entry point
+│   └── App.css              # Custom CSS styles
+│
+├── package.json             # Project metadata and dependencies
+└── README.md                # Project documentation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start Development Server:
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install Dependencies:
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Install React-Bootstrap:
+npm install react-bootstrap bootstrap
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Build for Production:
+npm run build
 
-### Code Splitting
+TESTING/ Explanation of application:  
+let's discuss why React was used for this assessment, react is a javascript tool that allows for building dynamic and interactive user interfaces which are perfect for the given front-end requirements: 
+So, for the following application in React, I made use of:
+SearchBar for inputs.
+ResultsTable for displaying results.
+SelectedContact for showing selected details.
+Use useState for managing search criteria and results.
+Use useEffect to re-filter results when search criteria change.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Add Contacts Data: Update the Sample contacts data in the public folder of the mockData.json file in the project application. There are about  5 data samples for use.
+The current set pagination limit is 3, but can be changed depending on requirements.
+Change Pagination Limit: To modify the number of items per page in ResultsTable.js:
+Search for the line:
+const itemsPerPage = <desired-number>;
 
-### Analyzing the Bundle Size
+The code was not built into a production-ready build as it was not required for the assessment, but I included the steps just in case, to build the Application: Run the following command in the terminal always make sure user in the project folder PATH::
+bash/cmd line:
+npm run build
+Serve the Build: Use any static server to serve the build folder. For example:
+Using serve:
+bash /cmd line:
+npm install -g serve
+serve -s build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Troubleshooting - Just in case
+### 1. Port Already in Use
+If the default port 3000 is already in use, you can run the app on a different port:
+bash
+PORT=3001 npm start
 
-### Making a Progressive Web App
+### 2. Dependency Issues
+If you encounter issues while installing dependencies, try clearing the node_modules folder and reinstalling:
+bash
+rm -rf node_modules package-lock.json
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
